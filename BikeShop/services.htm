@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <!--
+        Title:Elam's Bicylces Services Page 
+                Basic Web Applications
+        Name: Dakota Elam
+        School: Southern Illinois University
+        Date Developed: 9/18/2019
+        Tested: 9/18/2019
+    -->
+    <head>
+            <title>Services</title>
+
+            <meta charset="utf-8">
+            <meta name="description" content="A bike shop that offer's a wide variety of bikes from many well-known brands.">
+            <meta name="keywords" content="Elam, Bicycles, Bikes, Harrisburg, Illinois">
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+
+            <!-- External Stylesheets -->
+            <link rel="stylesheet" href="./css/styles.css">
+            <link rel="stylesheet" href="./css/slicknav.css">
+
+            <!-- Slicknav Plugin Scripts -->
+            <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+            <script src="./js/jquery.slicknav.min.js"></script>
+            <script type="text/javascript">
+                $(document) .ready(function(){
+                    $('#nav_menu') .slicknav({prependTo:"#mobile_menu"});
+                });
+            </script>
+    </head>
+    <body>
+        <nav id="mobile_menu"></nav>
+        <nav id="nav_menu">
+                        <ul>
+                <li><a href="index.htm">Home</a></li>
+                <li><a href="rentals.htm">Rental</a></li>
+                <li><a href="sales.htm">Sales</a></li>
+                <li><a href="services.htm" class="current">Services</a></li>
+                <li><a href="contact.htm">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Services</h1>
+    </body>
+</html>
