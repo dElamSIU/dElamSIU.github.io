@@ -3,10 +3,26 @@ Basic Web Applications
 Name: Dakota Elam
 School: Southern Illinois University
 Date Developed: 9/15/2019
-Tested: 9/15/2019
-Updated: 9/21/2019*/
+Tested/Update: 10/13/2019
 
-/*Controls the navigation menu at the top of the website.*/
+Changelog:
+
+    Rental & Sales:
+        -Added CSS for Videoplayer.
+
+        -Renamed all references to the rental page 
+            as TwoColumn so that it can affect multiple 
+            pages with the same Two-Column layout.
+
+        -Readjusted the logo's for TwoColumn classes so 
+            that it is better aligned with the center.
+
+    Home/Index:
+        -Added CSS to control the #TrekFuel image rollover 
+            effect on the index page.
+*/
+
+/* Controls the navigation menu at the top of the website. */
 #nav_menu ul {
     list-style-type: none;
     padding: 1em 0;
@@ -16,56 +32,80 @@ Updated: 9/21/2019*/
 }
 
 
-/*Places the links into a horizontal row*/
+/* Places the links into a horizontal row. */
 #nav_menu ul li{
     display: inline;
     padding: 0 1.5em
 }
 
-/*Controls Font styling*/
+/* Controls Font styling. */
 #nav_menu ul li a {
     font-weight: bold;
     color: black;
 }
 
-/*Controls the link that has the class of current to let the user know what page they are on.*/
+/* Controls the link that has the class of current to let the user know what page they are on. */
 #nav_menu ul li a.current {
     text-decoration: none;
     color: blue;
 }
 
-/*Disables mobile_menu from slicknav plugin.*/
+/* Disables mobile_menu from slicknav plugin. */
 #mobile_menu {
     display: none;
 }
 
-/*Controls the logo at the top of the page.*/
+#TrekFuel {
+    background-image: url("../images/trekFuelEXOrange.jpg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    
+    width: 350px;
+    height: 350px;
+}
+
+#TrekFuel:hover {
+    background-image: url("../images/trekFuelEXBlack.jpg");
+}
+
+/* Controls any general videoplayers on the website. */
+#Videoplayer {
+    max-width: 50%;
+    height: auto;
+    position: relative;
+    left: 25%;
+        
+    margin-top: 2%;
+    
+    border: solid 2px #0000FF;
+}
+
+/* Controls the logo at the top of the page. */
 .Logo {
     max-width: 50%;
     height: auto;
     position: relative;
-    left: 25%
+    left: 25%;
 
 }
 
-/*Places a border around the img element of the Logo ID to prevent the margins from having a border.*/
+/* Places a border around the img element of the Logo ID to prevent the margins from having a border. */
 img.Logo {
     border-style: outset;
     border-radius: 25px;
     border-color: #0000FF;
 }
 
-/*Controls the Title of the webpage which should be located under the Logo*/
+/* Controls the Title of the webpage which should be located under the Logo. */
 .Title {
     text-align: center;
 
     font-size: 2em;
 }
 
-/*Controls the Description which contains all of the information about the bike store.*/
-/*.Description {}*/
+/* Controls the Description which contains all of the information about the bike store. */
 
-/*Non-ID/Class formatting.*/
+/* Non-ID/Class Formatting */
 body {
     margin: 10px;
     width: 100%;
@@ -100,29 +140,29 @@ li {
     padding-left: 10px;
 }
 
-/*Bike Rental CSS*/
-/*Controls the "Elam's Bicycles" and controls the horizontal blue border*/
-/*Controls the logo at the top of the page.*/
-.RentalLogo {
+/* Two-Column Layout CSS */
+/* Controls the "Elam's Bicycles" and controls the horizontal blue border. */
+/* Controls the logo at the top of the page. */
+.TwoColumnLogo {
     max-width: 50%;
     height: auto;
     position: relative;
     margin-top: 0.519%;
-    left: 22.245%;
+    left: 25%;
 
 }
 
-/*Places a border around the img element of the Logo ID to prevent the margins from having a border.*/
-img.RentalLogo {
+/* Places a border around the img element of the Logo ID to prevent the margins from having a border. */
+img.TwoColumnLogo {
     border-style: outset;
     border-radius: 25px;
     border-color: #0000FF;
 }
 
-/*Controls the body tag of rentals.htm.*/
-.Rentals {
+/* Controls the body tag of two-column layout pages. */
+.TwoColumn {
     margin: 0px;
-    width: 100;
+    width: 100%;
     max-width: 1080px;
 
     background-color: #ECF9FF;
@@ -130,13 +170,13 @@ img.RentalLogo {
     font-size: 100%; /* 16 pixels */
 }
 
-/*Controls the Elam's Bicycles and Nav Bar's width at the top of the Rental page.*/
+/* Controls the Elam's Bicycles and Nav Bar's width at the top of the two column layout pages. */
 header {
     width: 99.792%;
     border-bottom: 2px solid #0000FF;
 }
 
-/*Controls the left column*/
+/* Controls the left column. */
 main {
     height: auto;
     width: 62.370%;
@@ -144,13 +184,13 @@ main {
     border-right: 2px solid #0000FF;
 }
 
-/*Controls the right column*/
+/* Controls the right column. */
 aside {
     width: 37.422%;
     float: right;
 }
 
-/*Draws a blue border at the bottom of the page*/
+/* Draws a blue border at the bottom of the page. */
 footer {
     width: 99.792%;
     clear: both;
@@ -158,22 +198,34 @@ footer {
 }
 
 /* Media Queries */
-/* General Pages */
 @media only screen and (max-width: 970px) {
-    /*Display mobile menu.*/
+    /* General Pages */
+    /* Display mobile menu. */
     #mobile_menu {
         display: block;
     }
     
-    /*Hide desktop menu*/
+    /* Hide desktop menu */
     #nav_menu {
         display: none;
     }
     
-    /* Rental Page */
+    /* Readjusts general videoplayers not controlled by their own class to the 
+        left side of their parent element. */
+    #Videoplayer {
+        left: 5%;
+    }
+    
+    /* Index Page */
+    #TrekFuel {
+        width: 250px;
+        height: 250px;
+    }
+    
+    /* Two Column Layout Pages */
     /* Will readjust the main and aside sections of 
-    the website to stack on top of each other to 
-    better fit small screens.*/
+        the website to stack on top of each other to 
+        better fit small screens.*/
     main {
         width: 99.792%;
         border-right: 0px solid #0000FF;

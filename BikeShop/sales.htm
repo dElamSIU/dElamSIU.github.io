@@ -6,41 +6,114 @@
         Name: Dakota Elam
         School: Southern Illinois University
         Date Developed: 9/18/2019
-        Tested: 9/18/2019
+        Tested/Update: 10/13/2019
+
+        Changelog
+        -Created a two column layout.
+
+        -Added the following content: 
+            Bike prices, Equipment and Accessories.
+
+        -Added Video in footer tag.
     -->
     
     <head>
-            <title>Sales</title>
+        <title>Sales</title>
 
-            <meta charset="utf-8">
-            <meta name="description" content="A bike shop that offer's a wide variety of bikes from many well-known brands.">
-            <meta name="keywords" content="Elam, Bicycles, Bikes, Harrisburg, Illinois">
-            <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="./favicon.ico">
 
-            <!-- External Stylesheets -->
-            <link rel="stylesheet" href="./css/styles.css">
-            <link rel="stylesheet" href="./css/slicknav.css">
+        <meta charset="utf-8">
+        <meta name="description" content="A bike shop that offer's a wide variety of bikes from many well-known brands.">
+        <meta name="keywords" content="Elam, Bicycles, Bikes, Harrisburg, Illinois">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
 
-            <!-- Slicknav Plugin Scripts -->
-            <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-            <script src="./js/jquery.slicknav.min.js"></script>
-            <script type="text/javascript">
-                $(document) .ready(function(){
-                    $('#nav_menu') .slicknav({prependTo:"#mobile_menu"});
-                });
-            </script>
+        <!-- External Stylesheets -->
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/slicknav.css">
+
+        <!-- Slicknav Plugin Scripts -->
+        <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+        <script src="./js/jquery.slicknav.min.js"></script>
+        <script type="text/javascript">
+            $(document) .ready(function(){
+                $('#nav_menu') .slicknav({prependTo:"#mobile_menu"});
+            });
+        </script>
     </head>
-    <body>
-        <nav id="mobile_menu"></nav>
-        <nav id="nav_menu">
-                        <ul>
-                <li><a href="index.htm">Home</a></li>
-                <li><a href="rentals.htm">Rental</a></li>
-                <li><a href="sales.htm" class="current">Sales</a></li>
-                <li><a href="services.htm">Services</a></li>
-                <li><a href="contact.htm">Contact</a></li>
+    <body class="TwoColumn">
+        <div class="TwoColumnLogo">
+            <img src="./High-Quality-Bicycle-Silhouette.png" alt="Bicycle Logo" class="Logo">
+        </div>
+        
+
+        
+        <header>
+            <div class="Title">
+                <h1>Elam's Bicycles</h1>
+            </div>
+            
+            <nav id="mobile_menu"></nav>
+            <nav id="nav_menu">
+                            <ul>
+                    <li><a href="index.htm">Home</a></li>
+                    <li><a href="rentals.htm">Rental</a></li>
+                    <li><a href="sales.htm" class="current">Sales</a></li>
+                    <li><a href="services.htm">Services</a></li>
+                    <li><a href="contact.htm">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <h2>Street Bikes</h2>
+            <p>Trek Checkpoint SL 5: $2,899.99</p>
+            <ul>
+                <li>SRAM Force eTap drivetrain.</li>
+                <li>XX1 AXS derailleur good on rough terrain.</li>
             </ul>
-        </nav>
-        <h1>Sales</h1>
+            
+            <p>Santa Cruz Jackal: $799.00</p>
+            <ul>
+                <li>Wheel size: 26".</li>
+                <li>Lightweight frame measuring in at 5lbs.</li>
+            </ul>
+            <h2>Mountain Bikes</h2>
+            <p>Polygon Collosus DH9: $5,599.00</p>
+            <ul>
+                <li>Wheel size: 27.5".</li>
+                <li>Floating shock design provides good bump suppression.</li>
+            </ul>
+            
+            <p>Peugeot M01: $2,204.46</p>
+            <ul>
+                <li>Light carbon frame.</li>
+                <li>Quick change suspension system.</li>
+            </ul>
+            
+        </main>
+        
+        <aside>
+            <h2>Equipment and Accessories</h2>
+            
+            <h2>Road Helmets</h2>
+            
+            <p>Road Helmets: Starting from $19.99</p>
+            
+            <p>Trail Helmets: Starting from $29.99</p>
+            
+            <h2>Miscellaneous</h2>
+            
+            <p>Bicycle Locks: Starting from $9.99</p>
+            
+        </aside>
+        
+        <footer>
+            <h2>Videos</h2>
+            
+            <video id="Videoplayer" controls>
+                <source src="./media/bicycleVideo.mp4">
+            </video>
+        </footer>
     </body>
 </html>
