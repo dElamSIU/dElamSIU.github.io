@@ -140,6 +140,35 @@ li {
     padding-left: 10px;
 }
 
+/* Table Controls */
+table {
+    max-width: 95%;
+    
+    position: relative;
+    left: 1.5%;
+    
+    border: 2px solid #0000FF;
+    border-collapse: separate;
+}
+
+th, td {
+    border: 1px solid #000000;
+    padding: .2em .7em;
+    text-align: right;
+}
+
+th:first-child, td:first-child {
+    text-align: left;
+}
+
+th:nth-child(2), td:nth-child(2) {
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #CCE9FF;
+}
+
 /* Two-Column Layout CSS */
 /* Controls the "Elam's Bicycles" and controls the horizontal blue border. */
 /* Controls the logo at the top of the page. */
