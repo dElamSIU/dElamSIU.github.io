@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+
+<!-- Denity Game Dev Home -->
+
+<html lang="en">
+	<head>
+		<!-- Tab Logo -->
+		
+		<!-- Style Sheet -->
+		<link rel="stylesheet" href="../../../../StyleSheets/blogStyle.css">
+		
+		<title>RPG Game Character Movement</title>
+		
+		<meta charset="UTF-8">
+		
+	</head>
+	
+	<body>
+		<!-- Logo -->
+		<img src="../../../../Images/denityGameDevLogo.png" alt="Denity Game Dev Logo" class="logo">
+		
+		<!-- Nav Section -->
+		<div class="sidebar">
+			<a href="../../../../denityGameDevHome.html">Home</a>
+			<a class="active" href="../../../../denityGameDevBlog.html">Blog</a>
+			<a href="../../../../denityGameDevSoftwareReview.html">Software Reviews</a>
+			<a href="../../../../denityGameDevAbout.html">About</a>
+			<a href="../../../../denityGameDevFeedback.html">Feedback</a>
+		</div>
+		
+		<div class="contentBacking">
+			
+			<div class="content">
+				<!-- Header -->
+				<a href="../unityProgrammingOverview.html"><p>Click to go back</p></a>
+				
+				<h1>RPG Game - Character Movement </h1>
+				
+				<p>During the development of a test RPG game, the character movement was one of the first programming scripts.</p>
+				
+				<p>Before developing the script, I always developed flowcharts to better visualize the logic behind the script. </p>
+				
+				<a href="./ProgrammingImages/playerMovementFlowchart.png" target="_blank">
+					<img src="./ProgrammingImages/playerMovementFlowchart.png" alt="RPG Player Movement Flowchart" class="contentImage">
+				</a>
+				
+				<p>There are two parts of the script. One to handle the movement for the character. And another to handle the hitbox used 
+					for attacking.</p>
+				
+				<p>As the player moves, the attack hitbox will be positioned in the player's direction. So if the player decided to move 
+					right, the attack hitbox will position itself at x = 1 and y = 0 relative to the player which is to the right of the player.</p>
+			
+				<a href="./ProgrammingImages/rPGPlayerMovementCode.png" target="_blank">
+					<img src="./ProgrammingImages/rPGPlayerMovementCode.png" alt="RPG Player Movement Code" class="contentImage">
+				</a>
+				
+				<p>An unintended effect that began to appear during the development of the script was the ability to attack in the corners of 
+					the character (the top left and right as well as the bottom left and right).</p>
+				
+				<p>I then decided to build the script around this side-effect by fine tuning the reach of the corners. </p>
+				
+				<a href="./ProgrammingImages/rPGCharacterMovement.gif" target="_blank">
+					<img src="./ProgrammingImages/rPGCharacterMovement.gif" alt="RPG Character Movement Gif" class="contentImage">
+				</a>
+
+				<p>The white diamond is a placeholder for the player and the blue interdictory circle is the attack hitbox. I use UI elements 
+					as the placeholder as it is faster rather than making custom placeholders.</p>
+			</div> <!-- END Content -->
+			
+		</div> <!-- END contentBacking -->
+		
+		<div id="footer">
+			<!-- Copyright -->
+			<small>
+				Dakota Elam, &copy; 2019
+			</small>
+		</div>
+	</body>
+	
+</html>

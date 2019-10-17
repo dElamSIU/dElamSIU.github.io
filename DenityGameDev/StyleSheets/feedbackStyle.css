@@ -1,0 +1,299 @@
+/* Default Elements */
+
+/* Constants that apply across multiple media queries */
+
+				/* TODOs */
+/* Adjust Font Size Based on Screen Width */
+
+body {
+	background-image: url(../Images/Backgrounds/prism.png);
+	
+	font-family: Times, Arial;
+}
+
+h1 {
+	line-height: 2em;
+	font-size: 3em;
+}
+
+h2 {
+	font-size: 2em;
+}
+
+p {
+	font-family: Georgia, Arial;
+	font-size: 1.6em;
+}
+
+ul {
+	font-family: Georgia, Arial;
+	font-size: 1.6em;
+	line-height: 2em;
+}
+
+div.contentBacking {
+	background-color: #353535;
+	border: solid 3px #252525;
+}
+
+img.logo {
+	max-width: 50%;
+	height: auto;
+}
+
+/***** END of Blog Links & Related Properties *****/
+
+div.sidebar {
+	background-color: #454545;
+	
+	margin: 0;
+	padding: 0;
+	width: 200px;
+	
+	position: fixed;
+	height: 100%;
+	overflow: auto;
+	
+	border: solid 3px #252525;
+}
+
+div.sidebar a {
+	display: block;
+	padding: 16px;
+	
+	color: #FFFFFF;
+	
+	text-decoration: none;
+}
+
+div.sidebar a.active {
+	background-color: #757575;
+	
+	font-size: 1em;
+}
+
+div.sidebar a:hover {
+	background-color: #505050;
+	
+	color: #FFFFFF;
+	font-size: 1.6em;
+}
+
+div.content {
+	margin-left: 200px;
+	padding: 1px 16px;
+	height: 100%;
+	
+	overflow: hidden;
+	
+	line-height: 2em;
+	color: #FFFFFF;
+}
+
+form.feedback ul {
+	list-style-type: none;
+}
+			
+form.feedback textarea {
+	font-size: 1em;
+}
+
+form.feedback input {
+	font-size: 1.4em;
+}
+
+div#footer {
+	background-color: #353535;
+	
+	position: fixed;
+	bottom: 0;
+	left: 0;
+	
+	width: 100%;
+	
+	border-top: solid 3px #252525;
+	
+	color: #FFFFFF;
+	text-align: center;
+}
+/* Media Queries */
+
+/* 4k Displays */
+@media only screen and (min-width: 2561px) {
+	/* Site Logo is positioned above vertical sidebar */
+	img.logo {
+		position: fixed;
+		
+		max-width: 305px;
+		height: auto;
+	
+		margin-left: 2.8%;
+	}
+	
+	div.contentBacking {
+		margin-right: 15%;
+		margin-left: 15%;
+	}
+	
+	div.content {
+		top: 125px;
+		
+		margin-left: 100px;
+	}
+	
+/***** END of Blog Links & Related Properties *****/
+	
+	div.sidebar {
+		top: 190px;
+		
+		margin-left: 4%;
+		
+		width: 250px;
+		
+	}
+	
+	div.sidebar a {
+		font-size: 1.4em;
+	}
+	
+	div.sidebar a.active {
+		font-size: 1.6em;
+	}
+	
+}
+
+/* 2k Displays */
+@media only screen and (min-width: 1921px) and (max-width: 2560px) {
+	/* Site Logo is positioned above vertical sidebar */
+	img.logo {
+		position: fixed;
+		
+		max-width: 200px;
+		
+		height: auto;
+	
+		margin-right: 75%;
+		
+		padding-left: 5px;
+	}
+	
+	div.contentBacking {
+		margin-left: 15%;
+		
+	}
+	
+	div.content {
+		margin-left: 100px;
+	}
+	
+	div.sidebar {
+		top: 125px;
+	}
+	
+}
+
+/* HD Displays */
+@media only screen and (min-width: 1281px) and (max-width: 1920px) {
+	/* Site Logo is positioned above vertical sidebar */
+	img.logo {
+		position: fixed;
+		
+		max-width: 200px;
+		height: auto;
+	
+		margin-right: 75%;
+		
+		padding-left: 5px;
+	}
+	
+	div.content {
+		margin-left: 200px;
+	}
+	
+	div.sidebar {
+		top: 125px;
+	}
+}
+
+/* HD Phones & Tablets */
+@media only screen and (min-width: 801px) and (max-width: 1280px) {
+	/* Nav var will display horizontally when screen is between 720px and 1079px */
+	/* Site Logo is positioned above vertical sidebar */
+	img.logo {
+		max-width: 50%;
+		height: auto;
+	
+		margin-left: 25%;
+	}
+	
+	div.sidebar {
+		width: 89.25%;
+		height: auto;
+		position: relative;
+	
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	
+	div.sidebar a {
+		float: left;
+	  
+		margin-left: 5%;
+		margin-right: 5%;
+		
+		text-align: center;
+	}
+  
+	div.contentBacking {
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	
+	div.content {
+		margin-left: 0%;
+	}
+}
+
+/* Legacy Phones & Tablets */
+@media only screen and (min-width: 100px) and (max-width: 800px) {
+	/* Site Logo is positioned above vertical sidebar */
+	img.logo {
+		max-width: 50%;
+		height: auto;
+	
+		margin-left: 25%;
+	}
+
+	/* Nav bar will display vertically above content when screen is between 100px and 699px */
+	div.sidebar {
+		width: 89.16%;
+		height: auto;
+		position: relative;
+		
+		/* Prevents the edges of the sidebar from extending past the contentBacking */ 
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	
+	div.sidebar a {
+		/* Allows sidebar links to display vertically */
+		float: none;
+	  
+		margin-left: 5%;
+		margin-right: 5%;
+		
+		text-align: center;
+	}
+  
+	div.contentBacking {
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+	
+	div.content {
+		margin-left: 0%;
+	}
+}
+
+/* Responsive Nav Bar from W3Schools */
+/* https://www.w3schools.com/howto/howto_css_sidebar_responsive.asp */

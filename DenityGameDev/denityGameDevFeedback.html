@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+
+<!-- Denity Game Dev Home -->
+
+<html lang="en">
+	<head>
+		<!-- Tab Logo -->
+		
+		<!-- Style Sheet -->
+		<link rel="stylesheet" href="./StyleSheets/feedbackStyle.css">
+		
+		<title>Feedback</title>
+		
+		<meta charset="UTF-8">
+		
+	</head>
+	
+	<body>
+		<!-- Logo -->
+		<img src="Images/denityGameDevLogo.png" alt="Denity Game Dev Logo" class="logo">
+		
+		<!-- Nav Section -->
+		<div class="sidebar">
+			<a href="./denityGameDevHome.html">Home</a>
+			<a href="./denityGameDevBlog.html">Blog</a>
+			<a href="./denityGameDevSoftwareReview.html">Software Reviews</a>
+			<a href="./denityGameDevAbout.html">About</a>
+			<a class="active" href="#feedback">Feedback</a>
+		</div>
+		
+		<div class="contentBacking">
+			
+			<div class="content">
+				<!-- Header -->
+				<h1> Feedback </h1>
+			
+				<!-- Site Content -->
+				<p>Here, I kindly ask that you take the time to fill out the feedback form to let me know if there are any inconveniences 
+					with my website that you have experienced.</p>
+				
+				<p>The answers on the form will help me decide on how I can update my website to better suite the audience and ensure that 
+					it is easy to navigate and that there are not any bugs.</p>
+					
+				<h1>Form</h1>
+			
+				<form class="feedback" method="post">
+					<p>On a scale of 1 to 5, how would you rate navigating the site? </p>
+					
+					<ul>
+						<li> <input type="radio" name="navScale" value="1"> 1 - very bad</li>
+						<li> <input type="radio" name="navScale" value="2"> 2 - bad</li>
+						<li> <input type="radio" name="navScale" value="2" checked="checked"> 3 - neutral</li>
+						<li> <input type="radio" name="navScale" value="2"> 4 - good</li>
+						<li> <input type="radio" name="navScale" value="2"> 5 - very good</li>
+					</ul>
+					
+					<p>Briefly share your experience with navigating the website:</p>
+					
+					<p>
+						<textarea name="userExperience" rows="10" cols="30">
+							Enter your experience here...
+						</textarea>
+					</p>
+					
+					<p>What sections of the website are your favorite?</p>
+					
+					<ul>
+						<li> <input type="checkbox" name="favoriteSect" value="blogUnity" id="Blog-Unity">Blog - Unity</li>
+						<li> <input type="checkbox" name="favoriteSect" value="blogUnreal" id="Blog-Unreal">Blog - Unreal</li>
+						
+						<li> <input type="checkbox" name="favoriteSect" value="reviewsGameEngines" id="Reviews-GameEngines">Reviews - Game Engines</li>
+						<li> <input type="checkbox" name="favoriteSect" value="reviewsTexturing" id="Reviews-Texturing">Reviews - Graphic Design</li>
+					</ul>
+						
+					<p>If applicable, share any inconveniences you came across while on this site.</p>
+					
+					<p>
+						<textarea name="userInconveniences" rows="10" cols="30">
+							Enter any inconveniences found here...
+						</textarea>
+					</p>
+					
+					<input type="submit" value="Submit">
+					<input type="reset" value="Clear the form">
+				</form>
+				
+				<p>Thank you for taking the time to fill out the form.</p>
+			</div> <!-- END Content -->
+			
+		</div> <!-- END contentBacking -->
+		
+		<div id="footer">
+			<!-- Copyright -->
+			<small>
+				Dakota Elam, &copy; 2019
+			</small>
+		</div>
+	</body>
+	
+</html>
