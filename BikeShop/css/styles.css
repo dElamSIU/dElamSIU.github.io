@@ -3,23 +3,17 @@ Basic Web Applications
 Name: Dakota Elam
 School: Southern Illinois University
 Date Developed: 9/15/2019
-Tested/Update: 10/13/2019
+Tested/Update: 10/20/2019
 
 Changelog:
 
-    Rental & Sales:
-        -Added CSS for Videoplayer.
+    Services:
+        -Added CSS to services.htm
 
-        -Renamed all references to the rental page 
-            as TwoColumn so that it can affect multiple 
-            pages with the same Two-Column layout.
-
-        -Readjusted the logo's for TwoColumn classes so 
-            that it is better aligned with the center.
-
-    Home/Index:
-        -Added CSS to control the #TrekFuel image rollover 
-            effect on the index page.
+    Index:
+        -Corrected the image rollover effect. 
+            All references to #TrekFuel are now 
+            .Rollover and .RolloverOverlay.
 */
 
 /* Controls the navigation menu at the top of the website. */
@@ -53,19 +47,6 @@ Changelog:
 /* Disables mobile_menu from slicknav plugin. */
 #mobile_menu {
     display: none;
-}
-
-#TrekFuel {
-    background-image: url("../images/trekFuelEXOrange.jpg");
-    background-size: contain;
-    background-repeat: no-repeat;
-    
-    width: 350px;
-    height: 350px;
-}
-
-#TrekFuel:hover {
-    background-image: url("../images/trekFuelEXBlack.jpg");
 }
 
 /* Controls any general videoplayers on the website. */
@@ -103,7 +84,37 @@ img.Logo {
     font-size: 2em;
 }
 
-/* Controls the Description which contains all of the information about the bike store. */
+/* Controls the Rollover effect on images used across the site. */
+.Rollover {
+    position: relative;
+    width: 35%;
+    
+}
+
+.Rollover img{
+    display: block;
+    
+    max-width: 100%;
+    width: 75%;
+    height: auto;
+}
+
+/* The second image is positioned over the first and its opacity is set to 0. */
+.RolloverOverlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    opacity: 0;
+}
+
+/* When hovered on, .RolloverOverlay will set its opacity to 1 which will cause the 
+    second image to appear over the top of the first image. */
+.Rollover:hover .RolloverOverlay {
+    opacity: 1;
+}
 
 /* Non-ID/Class Formatting */
 body {
@@ -142,8 +153,8 @@ li {
 
 /* Table Controls */
 table {
-    max-width: 95%;
-    
+    width: 75%;
+    height: auto;
     position: relative;
     left: 1.5%;
     
@@ -245,10 +256,17 @@ footer {
         left: 5%;
     }
     
+    /* Adjusts the table to make it bigger on smaller viewports. */
+    table {
+        width: 95%;
+    }
+    
     /* Index Page */
-    #TrekFuel {
-        width: 250px;
-        height: 250px;
+    
+    /* Makes the Rollover class element bigger on smaller viewports. */
+    .Rollover {
+    position: relative;
+    width: 60%;
     }
     
     /* Two Column Layout Pages */
