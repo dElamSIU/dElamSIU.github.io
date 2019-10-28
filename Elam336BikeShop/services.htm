@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <!--
+        Title:Elam's Bicylces Services Page 
+                Basic Web Applications
+        Name: Dakota Elam
+        School: Southern Illinois University
+        Date Developed: 9/18/2019
+        Tested/Update: 10/20/2019
+
+        Changelog:
+            
+            -Added content to the services.htm page.
+    -->
+    <head>
+        <title>Services</title>
+
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="./favicon.ico">
+
+        <meta charset="utf-8">
+        <meta name="description" content="A bike shop that offer's a wide variety of bikes from many well-known brands.">
+        <meta name="keywords" content="Elam, Bicycles, Bikes, Harrisburg, Illinois">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- External Stylesheets -->
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/slicknav.css">
+
+        <!-- Slicknav Plugin Scripts -->
+        <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+        <script src="./js/jquery.slicknav.min.js"></script>
+        <script type="text/javascript">
+            $(document) .ready(function(){
+                $('#nav_menu') .slicknav({prependTo:"#mobile_menu"});
+            });
+        </script>
+    </head>
+    <body>
+        <div class="Logo">
+            <img src="./High-Quality-Bicycle-Silhouette.png" alt="Bicycle Logo" class="Logo">
+        </div>
+        
+        <div class="Title">
+            <h1>Elam's Bicycles</h1>
+        </div>
+        
+        <nav id="mobile_menu"></nav>
+        <nav id="nav_menu">
+                        <ul>
+                <li><a href="index.htm">Home</a></li>
+                <li><a href="rentals.htm">Rental</a></li>
+                <li><a href="sales.htm">Sales</a></li>
+                <li><a href="services.htm" class="current">Services</a></li>
+                <li><a href="contact.htm">Contact</a></li>
+            </ul>
+        </nav>
+        
+    <!-- Cleaning/Checkup -->
+        <table>
+            <tr>
+                <th>Cleaning/Checkups</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Turnaround time*</th>
+            </tr>
+            
+            <!-- Clean Up and Lube -->
+            <tr>
+                <td>Clean Up and Lube</td>
+                <td>The bike is cleaned of any dirt and waxed. Pedals, wheels, and handlebars are lubed to prevent any catching and reduce wear.</td>
+                <td>$35</td>
+                <td>4 hours</td>
+            </tr>
+            
+            <!-- Safey Checks -->
+            <tr>
+                <td>Safety Checks</td>
+                <td>The bike is checked for any damages, wear, or any unsafe defects.</td>
+                <td>$10</td>
+                <td>2 Hours</td>
+            </tr>
+        
+        <!-- Adjustment table -->
+            <tr>
+                <th>Adjustments/Calibration</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Turnaround time*</th>
+            </tr>
+            
+            <!-- Brake Adjustment -->
+            <tr>
+                <td>Brake Adjustment</td>
+                <td>Brake pads are adjusted to ensure the safest and shortest stopping distance.</td>
+                <td>$15 each</td>
+                <td>2 Hours</td>
+            </tr>
+            
+            <!-- Seat and Handlebar Adjustment -->
+            <tr>
+                <td>Seat and Handlebar Adjustment</td>
+                <td>Seat and Handlebars are adjusted to the rider's preference to increase comfort.</td>
+                <td>$15</td>
+                <td>2 hours</td>
+            </tr>
+            
+            <!-- Calibrate Gears -->
+            <tr>
+                <td>Calibrate Gears</td>
+                <td>Gears are adjusted to ensure reasonable torgue and efficient fatigue managment.</td>
+                <td>$20</td>
+                <td>4 hours</td>
+            </tr>
+            
+            <!-- Adjust Wheel Hubs -->
+            <tr>
+                <td>Adjust Wheel Hubs</td>
+                <td>The wheel hubs are adjusted to ensure a perfectly straight rim and no wobble.</td>
+                <td>$10</td>
+                <td>2 hours</td>
+            </tr>
+            
+        <!-- Repair table -->
+            <tr>
+                <th>Repairs/Replacement</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Turnaround time*</th>
+            </tr>
+            
+            <!-- Tire Repair -->
+            <tr>
+                <td>Tire Repair</td>
+                <td>Tires are patched where necessary and reseated onto the bike rims.</td>
+                <td>$25</td>
+                <td>2 hours</td>
+            </tr>
+
+            <!-- Cable Replacement -->
+            <tr>
+                <td>Cable Replacement</td>
+                <td>The old brake cables are pulled from the bike and a new set are installed.</td>
+                <td>$15</td>
+                <td>2 hours</td>
+            </tr>
+            
+            <!-- Parts Replacement -->
+            <tr>
+                <td>Parts Replacement</td>
+                <td>Requested parts are taken off of the bike and a new replacement is installed.</td>
+                <td>$15 - $35</td>
+                <td>Varies depending on part.</td>
+            </tr>
+            
+            <!-- Repair Bike Chain -->
+            <tr>
+                <td>Repair Bike Chain</td>
+                <td>Any broken linkages are replaced and the chain is reseated on the sprocket.</td>
+                <td>$15</td>
+                <td>2 hours</td>
+            </tr>
+        
+        <!-- Miscellaneous -->
+            <tr>
+                <th>Miscellaneous</th>
+                <th>Description</th>
+                <th>Price</th>
+                <th>Turnaround time*</th>
+            </tr>
+            
+            <!-- Other Miscellaneous Repairs -->
+            <tr>
+                <td>Other Miscellaneous Repairs</td>
+                <td>Other repairs not listed directly, call or email Elam's Bicycles for further information or requests.</td>
+                <td>$10 - $40</td>
+                <td>Varies based on repairs.</td>
+            </tr>
+        </table>
+        <p>*Turnaround time based on average time to complete complete the service, not the queue that the bike may sit in. Queue times will vary based on customer load. Allow at least one business day to ensure that your bike has gone through the queue and has been serviced.</p>
+    </body>
+</html>

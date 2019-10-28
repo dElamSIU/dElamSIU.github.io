@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <!--
+        Title:Elam's Bicylces Response page 
+                Basic Web Applications
+        Name: Dakota Elam
+        School: Southern Illinois University
+        Date Developed: 10/27/2019
+        Tested/Update: 10/27/2019 -->
+
+    <head>
+        <title>Elam's bicycles</title>
+        
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="./favicon.ico">
+        
+        <meta charset="utf-8">
+        <meta name="description" content="A bike shop that offer's a wide variety of bikes from many well-known brands.">
+        <meta name="keywords" content="Elam, Bicycles, Bikes, Harrisburg, Illinois">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- External Stylesheets -->
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/slicknav.css">
+        
+        <!-- Slicknav Plugin Scripts -->
+        <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+        <script src="./js/jquery.slicknav.min.js"></script>
+        <script type="text/javascript">
+            $(document) .ready(function(){
+                $('#nav_menu') .slicknav({prependTo:"#mobile_menu"});
+            });
+        </script>
+    </head>
+    
+    <body>
+        <div class="Logo">
+            <img src="./High-Quality-Bicycle-Silhouette.png" alt="Bicycle Logo" class="Logo">
+        </div>
+        
+        <div class="Title">
+            <h1>Elam's Bicycles</h1>
+        </div>
+        
+        <nav id="mobile_menu"></nav>
+        <nav id="nav_menu">
+                        <ul>
+                <li><a href="index.htm">Home</a></li>
+                <li><a href="rentals.htm">Rental</a></li>
+                <li><a href="sales.htm" >Sales</a></li>
+                <li><a href="services.htm">Services</a></li>
+                <li><a href="contact.htm">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <p>The form has been submitted.</p>
+    </body>
+</html>

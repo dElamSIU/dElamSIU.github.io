@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <!--
+        Title:Elam's Bicylces Home Page 
+                Basic Web Applications
+        Name: Dakota Elam
+        School: Southern Illinois University
+        Date Developed: 9/15/2019
+        Tested/Update: 10/20/2019
+
+        Changelog:
+            -Correct image rollover effect. References to #TrekFuel are now .Rollover and .RolloverOverlay.
+    -->
+    <head>
+        <title>Elam's bicycles</title>
+        
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="./favicon.ico">
+        
+        <meta charset="utf-8">
+        <meta name="description" content="A bike shop that offer's a wide variety of bikes from many well-known brands.">
+        <meta name="keywords" content="Elam, Bicycles, Bikes, Harrisburg, Illinois">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- External Stylesheets -->
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/slicknav.css">
+        
+        <!-- Slicknav Plugin Scripts -->
+        <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+        <script src="./js/jquery.slicknav.min.js"></script>
+        <script type="text/javascript">
+            $(document) .ready(function(){
+                $('#nav_menu') .slicknav({prependTo:"#mobile_menu"});
+            });
+        </script>
+    </head>
+    
+    <body>
+        <audio id="audioplayer" controls loop autoplay>
+            <source src="./media/bicycleSpokesLoop.ogg">
+        </audio>
+        
+        <div class="Logo">
+            <img src="./High-Quality-Bicycle-Silhouette.png" alt="Bicycle Logo" class="Logo">
+        </div>
+        
+        <div class="Title">
+            <h1>Elam's Bicycles</h1>
+        </div>
+        
+        <nav id="mobile_menu"></nav>
+        <nav id="nav_menu">
+                        <ul>
+                <li><a href="index.htm" class="current">Home</a></li>
+                <li><a href="rentals.htm">Rental</a></li>
+                <li><a href="sales.htm" >Sales</a></li>
+                <li><a href="services.htm">Services</a></li>
+                <li><a href="contact.htm">Contact</a></li>
+            </ul>
+        </nav>
+        
+        <div class="Description">
+            <p>We sell high quality bikes from all of the well-known brands. From mountain bikes all of the way to BMX, we got every type of bike you could possibly need.</p>
+            
+            <h2>Models</h2>
+            
+            <p>The models we have include, but are not limited to:</p>
+            <ul>
+                <li>Trek Fuel EX 9.8</li>
+            </ul>
+                    <figure>
+                        <div class="Rollover">
+                            <img src="./images/trekFuelEXOrange.jpg" alt="Orange Trek Fuel Bike">
+                            <div class="RolloverOverlay">
+                                <div class="RolloverImage"><img src="./images/trekFuelEXBlack.jpg" alt="Black Trek Fuel Bike"></div>
+                            </div>
+                        </div>
+                        <figcaption>Trek Fuel EX 9.8 Bike.</figcaption>
+                    </figure>
+            <ul>
+                <li>Santa Cruz Nomad</li>
+                <li>Polygon Helios LT9X</li>
+                <li>Peugeot M09</li>
+                <li>Mongoose Index 2.0</li>
+            </ul>
+            
+            <p>We are located at 827 Clarkson Street in Harrisburg, Illinois</p>
+            <p>Our phone number is 123-456-7890.</p>
+            
+            <a href="https://www.siu.edu">Visit Southern Illinois University's website.</a> 
+        </div>
+    </body>
+</html>

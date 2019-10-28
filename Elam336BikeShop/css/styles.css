@@ -1,0 +1,323 @@
+/*Title:Elam's Bicylces General stylesheet
+Basic Web Applications
+Name: Dakota Elam
+School: Southern Illinois University
+Date Developed: 9/15/2019
+Tested/Update: 10/27/2019
+
+/* Controls the navigation menu at the top of the website. */
+#nav_menu ul {
+    list-style-type: none;
+    padding: 1em 0;
+    text-align: center;
+    border-top: 2px solid blue;
+    border-bottom: 2px solid blue;
+}
+
+
+/* Places the links into a horizontal row. */
+#nav_menu ul li{
+    display: inline;
+    padding: 0 1.5em
+}
+
+/* Controls Font styling. */
+#nav_menu ul li a {
+    font-weight: bold;
+    color: black;
+}
+
+/* Controls the link that has the class of current to let the user know what page they are on. */
+#nav_menu ul li a.current {
+    text-decoration: none;
+    color: blue;
+}
+
+/* Disables mobile_menu from slicknav plugin. */
+#mobile_menu {
+    display: none;
+}
+
+/* Controls any general videoplayers on the website. */
+#Videoplayer {
+    max-width: 50%;
+    height: auto;
+    position: relative;
+    left: 25%;
+        
+    margin-top: 2%;
+    
+    border: solid 2px #0000FF;
+}
+
+/* Controls the logo at the top of the page. */
+.Logo {
+    max-width: 50%;
+    height: auto;
+    position: relative;
+    left: 25%;
+
+}
+
+/* Places a border around the img element of the Logo ID to prevent the margins from having a border. */
+img.Logo {
+    border-style: outset;
+    border-radius: 25px;
+    border-color: #0000FF;
+}
+
+/* Controls the Title of the webpage which should be located under the Logo. */
+.Title {
+    text-align: center;
+
+    font-size: 2em;
+}
+
+/* Controls the Rollover effect on images used across the site. */
+.Rollover {
+    position: relative;
+    width: 35%;
+    
+}
+
+.Rollover img{
+    display: block;
+    
+    max-width: 100%;
+    width: 75%;
+    height: auto;
+}
+
+/* The second image is positioned over the first and its opacity is set to 0. */
+.RolloverOverlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    
+    opacity: 0;
+}
+
+/* When hovered on, .RolloverOverlay will set its opacity to 1 which will cause the 
+    second image to appear over the top of the first image. */
+.Rollover:hover .RolloverOverlay {
+    opacity: 1;
+}
+
+/* Non-ID/Class Formatting */
+body {
+    margin: 10px;
+    width: 100%;
+
+    background-color: #ECF9FF;
+        
+    font-size: 100%; /* 16 pixels */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 1.039%;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.25em;
+}
+
+p {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+li {
+    padding-left: 10px;
+}
+
+/* Table Controls */
+table {
+    width: 75%;
+    height: auto;
+    position: relative;
+    left: 1.5%;
+    
+    border: 2px solid #0000FF;
+    border-collapse: separate;
+}
+
+th, td {
+    border: 1px solid #000000;
+    padding: .2em .7em;
+    text-align: right;
+}
+
+th:first-child, td:first-child {
+    text-align: left;
+}
+
+th:nth-child(2), td:nth-child(2) {
+    text-align: left;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #CCE9FF;
+}
+
+/* Form Controls */
+#button {
+    margin-left: 0em;
+}
+
+/* Aligns the forms into a straight column. */
+label {
+    clear:both;
+    float: left;
+    width: 8em;
+    
+    text-align: right;
+}
+
+input {
+    margin-left: 1em;
+    margin-bottom: .5em;
+}
+
+select {
+    margin-left: 1em;
+    margin-bottom: .5em;
+}
+
+fieldset {
+    width: 30%;
+    height: auto;
+    
+    margin-bottom: 1em;
+}
+
+fieldset label{
+    float: none;
+}
+
+textarea {
+    clear: both;
+    display:block;
+    
+    width: 50%;
+    height: 15em;
+    
+    margin-bottom: 1em;
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Two-Column Layout CSS */
+/* Controls the "Elam's Bicycles" and controls the horizontal blue border. */
+/* Controls the logo at the top of the page. */
+.TwoColumnLogo {
+    max-width: 50%;
+    height: auto;
+    position: relative;
+    margin-top: 0.519%;
+    left: 25%;
+
+}
+
+/* Places a border around the img element of the Logo ID to prevent the margins from having a border. */
+img.TwoColumnLogo {
+    border-style: outset;
+    border-radius: 25px;
+    border-color: #0000FF;
+}
+
+/* Controls the body tag of two-column layout pages. */
+.TwoColumn {
+    margin: 0px;
+    width: 100%;
+    max-width: 1080px;
+
+    background-color: #ECF9FF;
+    
+    font-size: 100%; /* 16 pixels */
+}
+
+/* Controls the Elam's Bicycles and Nav Bar's width at the top of the two column layout pages. */
+header {
+    width: 99.792%;
+    border-bottom: 2px solid #0000FF;
+}
+
+/* Controls the left column. */
+main {
+    height: auto;
+    width: 62.370%;
+    float: left;
+    border-right: 2px solid #0000FF;
+}
+
+/* Controls the right column. */
+aside {
+    width: 37.422%;
+    float: right;
+}
+
+/* Draws a blue border at the bottom of the page. */
+footer {
+    width: 99.792%;
+    clear: both;
+    border-top: 2px solid #0000FF;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 970px) {
+    /* General Pages */
+    /* Display mobile menu. */
+    #mobile_menu {
+        display: block;
+    }
+    
+    /* Hide desktop menu */
+    #nav_menu {
+        display: none;
+    }
+    
+    /* Readjusts general videoplayers not controlled by their own class to the 
+        left side of their parent element. */
+    #Videoplayer {
+        left: 5%;
+    }
+    
+    /* Adjusts the table to make it bigger on smaller viewports. */
+    table {
+        width: 95%;
+    }
+    
+    /* Index Page */
+    
+    /* Makes the Rollover class element bigger on smaller viewports. */
+    .Rollover {
+    position: relative;
+    width: 60%;
+    }
+    
+    /* Two Column Layout Pages */
+    /* Will readjust the main and aside sections of 
+        the website to stack on top of each other to 
+        better fit small screens.*/
+    main {
+        width: 99.792%;
+        border-right: 0px solid #0000FF;
+    }
+    
+    aside {
+        width: 99.792%;
+        float: left;
+        
+        border-top: 2px solid #0000FF;
+    }
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <!--
+        Title:Elam's Bicylces Rentals Page
+                Basic Web Applications
+        Name: Dakota Elam
+        School: Southern Illinois University
+        Date Developed: 9/15/2019
+        Tested/Update: 9/29/2019
+    -->
+    <head>
+        <title>Rentals</title>
+        
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="./favicon.ico">
+        
+        <meta charset="utf-8">
+        <meta name="description" content="A bike shop that offer's a wide variety of bikes from many well-known brands.">
+        <meta name="keywords" content="Elam, Bicycles, Bikes, Harrisburg, Illinois">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- External Stylesheets -->
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/slicknav.css">
+        
+        <!-- Slicknav Plugin Scripts -->
+        <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+        <script src="./js/jquery.slicknav.min.js"></script>
+        <script type="text/javascript">
+            $(document) .ready(function(){
+                $('#nav_menu') .slicknav({prependTo:"#mobile_menu"});
+            });
+        </script>
+    </head>
+    
+    <body class="TwoColumn">
+        <div class="TwoColumnLogo">
+            <img src="./High-Quality-Bicycle-Silhouette.png" alt="Bicycle Logo" class="Logo">
+        </div>
+        
+
+        
+        <header>
+            <div class="Title">
+                <h1>Elam's Bicycles</h1>
+            </div>
+            
+            <nav id="mobile_menu"></nav>
+            <nav id="nav_menu">
+                            <ul>
+                    <li><a href="index.htm">Home</a></li>
+                    <li><a href="rentals.htm" class="current">Rental</a></li>
+                    <li><a href="sales.htm">Sales</a></li>
+                    <li><a href="services.htm">Services</a></li>
+                    <li><a href="contact.htm">Contact</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main>
+            <h2>Street Bikes</h2>
+            <p>Trek Checkpoint SL 5</p>
+            <ul>
+                <li>SRAM Force eTap drivetrain.</li>
+                <li>XX1 AXS derailleur good on rough terrain.</li>
+            </ul>
+            
+            <p>Santa Cruz Jackal</p>
+            <ul>
+                <li>Wheel size: 26".</li>
+                <li>Lightweight frame measuring in at 5lbs.</li>
+            </ul>
+            <h2>Mountain Bikes</h2>
+            <p>Polygon Collosus DH9</p>
+            <ul>
+                <li>Wheel size: 27.5".</li>
+                <li>Floating shock design provides good bump suppression.</li>
+            </ul>
+            
+            <p>Peugeot M01</p>
+            <ul>
+                <li>Light carbon frame.</li>
+                <li>Quick change suspension system.</li>
+            </ul>
+            
+        </main>
+        
+        <aside>
+            <h2>Rates</h2>
+            
+            <h2>Street Bikes</h2>
+            <p>Per Day: $36.00</p>
+            <p>Per Week: $165.00</p>
+            
+            <h2>Mountain Bikes</h2>
+            <p>Per Day: $45.00</p>
+            <p>Per Week $185.00</p>
+        </aside>
+        
+        <footer>
+            <h2>Conditions</h2>
+            <h3>Equipment</h3>
+            <p>All rentals come with a helmet, basket, and headlights. The equipment must be returned at the end of the rental period. Failure to return equipment will result in additional fees equivalent to cost of the lost missing equipment.</p>
+            <h3>Payment</h3>
+            <p>Payment will be received prior to the bikes being released for customer use. Additional fees for maintenance and missing equipment may be added at the end of the rental period if any heavy wear is apparent on the bike including: scratches in the paint, bent wheels and/or frame, damaged tires, and other damages that would compromise the bike.</p>
+            <h3>Use</h3>
+            <p>The bikes are to be used for standard use and wear. The bikes are not to be used in a way that would result in damage. Prohibited scenarios include: large jumps or falls, wheelies, and intentional grinding of the bike frame on a surface. Damages from apparent misuse will result in additional fees to be payed at the end of the rental period.</p>
+        </footer>
+        
+    </body>
+</html>
