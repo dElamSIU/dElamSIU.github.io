@@ -3,7 +3,13 @@ Basic Web Applications
 Name: Dakota Elam
 School: Southern Illinois University
 Date Developed: 9/15/2019
-Tested/Update: 10/27/2019
+Tested/Update: 10/27/2019*/
+
+/* Fonts */
+@font-face {
+    font-family: 'AirAmerica';
+    src: url('../fonts/AirAmerica-Regular.otf');
+}
 
 /* Controls the navigation menu at the top of the website. */
 #nav_menu ul {
@@ -116,6 +122,8 @@ body {
 }
 
 h1, h2, h3, h4, h5, h6 {
+    font-family: 'AirAmerica';
+    
     padding: 1.039%;
 }
 
