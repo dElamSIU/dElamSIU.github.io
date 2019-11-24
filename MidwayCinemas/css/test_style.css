@@ -1,0 +1,196 @@
+/*Title:Elam's Bicylces General stylesheet
+Basic Web Applications
+Name: Dakota Elam
+School: Southern Illinois University
+Date Developed: 9/15/2019
+Tested/Update: 9/29/2019*/
+
+/*Controls the navigation menu at the top of the website.*/
+#nav_menu ul {
+    list-style-type: none;
+    padding: 1em 0;
+    text-align: center;
+    border-top: 2px solid blue;
+    border-bottom: 2px solid blue;
+}
+
+
+/*Places the links into a horizontal row*/
+#nav_menu ul li{
+    display: inline;
+    padding: 0 1.5em
+}
+
+/*Controls Font styling*/
+#nav_menu ul li a {
+    font-weight: bold;
+    color: black;
+}
+
+/*Controls the link that has the class of current to let the user know what page they are on.*/
+#nav_menu ul li a.current {
+    text-decoration: none;
+    color: blue;
+}
+
+/*Disables mobile_menu from slicknav plugin.*/
+#mobile_menu {
+    display: none;
+}
+
+/*Controls the logo at the top of the page.*/
+.Logo {
+    max-width: 50%;
+    height: auto;
+    position: relative;
+    left: 25%
+
+}
+
+/*Places a border around the img element of the Logo ID to prevent the margins from having a border.*/
+img.Logo {
+    border-style: outset;
+    border-radius: 25px;
+    border-color: #0000FF;
+}
+
+/*Controls the Title of the webpage which should be located under the Logo*/
+.Title {
+    text-align: center;
+
+    font-size: 2em;
+}
+
+/*Controls the Description which contains all of the information about the bike store.*/
+/*.Description {}*/
+
+/*Non-ID/Class formatting.*/
+body {
+    margin: 10px;
+    width: 100%;
+
+    background-color: #ECF9FF;
+        
+    font-size: 100%; /* 16 pixels */
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 1.039%;
+}
+
+h1 {
+    font-size: 2em;
+}
+
+h2 {
+    font-size: 1.5em;
+}
+
+h3 {
+    font-size: 1.25em;
+}
+
+p {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+li {
+    padding-left: 10px;
+}
+
+/*Bike Rental CSS*/
+/*Controls the "Elam's Bicycles" and controls the horizontal blue border*/
+/*Controls the logo at the top of the page.*/
+.RentalLogo {
+    max-width: 50%;
+    height: auto;
+    position: relative;
+    margin-top: 0.519%;
+    left: 22.245%;
+
+}
+
+/*Places a border around the img element of the Logo ID to prevent the margins from having a border.*/
+img.RentalLogo {
+    border-style: outset;
+    border-radius: 25px;
+    border-color: #0000FF;
+}
+
+/*Controls the body tag of rentals.htm.*/
+.Rentals {
+    margin: 0px;
+    width: 100%;
+    max-width: 1080px;
+
+    background-color: #ECF9FF;
+    
+    font-size: 100%; /* 16 pixels */
+}
+
+/*Contains the main and aside for the flex layout.*/
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*Controls the Elam's Bicycles and Nav Bar's width at the top of the Rental page.*/
+header {
+    width: 99.792%;
+    border-bottom: 2px solid #0000FF;
+}
+
+/*Controls the left column*/
+main {
+    flex: 49.5%;
+}
+
+/*Controls the right column*/
+aside {
+    flex: 50%;
+    
+    border-left: 2px solid #0000FF;
+}
+
+/*Draws a blue border at the bottom of the page*/
+footer {
+    width: 99.792%;
+    clear: both;
+    border-top: 2px solid #0000FF;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 970px) {
+    /* General Pages */
+    /*Display mobile menu.*/
+    #mobile_menu {
+        display: block;
+    }
+    
+    /*Hide desktop menu*/
+    #nav_menu {
+        display: none;
+    }
+    
+    /* Rental Page */
+    /* Will readjust the main and aside sections of 
+    the website to stack on top of each other to 
+    better fit small screens.*/
+
+    .flex-container {
+        flex-direction: column;
+    }
+    
+    main {
+        
+        padding: 0.5%;
+        border-bottom: 2px solid #0000FF    
+    }
+    
+    aside {
+        padding-bottom: 0.5%;
+
+        border-left: 0px solid #0000FF;
+}
+}

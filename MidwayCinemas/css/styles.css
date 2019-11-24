@@ -1,0 +1,152 @@
+/*Title:Midway Cinemas General stylesheet
+Basic Web Applications
+Name: Dakota Elam
+School: Southern Illinois University
+Date Developed: 11/8/2019
+Tested/Update: N/A
+*/
+
+/* Fonts */
+/*
+@font-face {
+    font-family: 'AirAmerica';
+    src: url('../fonts/AirAmerica-Regular.otf');
+}
+*/
+
+/* General IDs and Classes */
+
+/* Controls the navigation menu at the top of the website. */
+#nav_menu ul {
+    list-style-type: none;
+    padding: 1em 0;
+    text-align: center;
+}
+
+
+/* Places the links into a horizontal row. */
+#nav_menu ul li{
+    display: inline;
+    padding: 0 1.5em
+}
+
+/* Controls Font styling. */
+#nav_menu ul li a {
+    font-weight: bold;
+    color: #CCCCCC;
+}
+
+/* Controls the link that has the class of current to let the user know what page 
+    they are on. */
+#nav_menu ul li a.current {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+/* Disables mobile_menu from slicknav plugin. */
+#mobile_menu {
+    display: none;
+}
+
+.logo {
+    position: relative;
+    left: 37.5%;
+    
+    background-color: #353535;
+    
+    max-width: 25%;
+    height: auto;
+
+    border: 5px solid #A5A5A5;
+    
+}
+
+.businessName {
+    text-align: center;
+}
+
+.contentBackingHeader {
+    background-color: #353535;
+    
+    border: 5px solid #A5A5A5;
+}
+
+.contentWrapHeader {}
+
+.contentBacking {
+    background-color: #353535;
+    
+    /* Seperates the SlickNav menu from the content of the page. */
+    margin-top: 2%;
+    
+    margin-left: 15%;
+    margin-right: 15%;
+    
+    border: 5px solid #A5A5A5;
+}
+
+.contentWrap {
+    margin-left: .5%
+}
+
+/* General Page CSS */
+body {
+    background-image: url(../images/prism.png);
+    background-repeat: repeat;
+    /* Text Color */
+    color: #FFFFFF;
+}
+
+/* Movies Page CSS */
+
+/* Responsive Image Grid */
+/* Reference Used: https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp */
+/* Rounds the corner of the image and adds a border as a selector. */
+.imageGrid img:hover{
+    border-radius: 15px;
+    border: 2px solid #FFFFFF;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+/* Aligns individual divs with the .column class into columns next to each other. */
+.column {
+    flex: 25%;
+    max-width: 33%;
+    padding: 0 2%;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+}
+
+/* Generic Tags */
+
+/* Media Queries */
+@media only screen and (max-width: 970px) {
+    /* General Pages */
+    /* Display mobile menu. */
+    #mobile_menu {
+        display: block;
+    }
+    
+    /* Hide desktop menu */
+    #nav_menu {
+        display: none;
+    }
+    
+    /* Movie Page */
+    
+    /* Adjust the columns for smaller viewports. */
+    .column {
+        flex: 50%;
+        max-width: 45.8%;
+    }
+    
+}
