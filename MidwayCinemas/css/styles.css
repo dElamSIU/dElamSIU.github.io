@@ -126,6 +126,53 @@ body {
     width: 100%;
 }
 
+/* Form Controls */
+#button {
+    margin-left: 0em;
+}
+
+/* Aligns the forms into a straight column. */
+label {
+    clear:both;
+    float: left;
+    width: 8em;
+    
+    text-align: right;
+}
+
+input {
+    margin-left: 1em;
+    margin-bottom: .5em;
+}
+
+select {
+    margin-left: 1em;
+    margin-bottom: .5em;
+}
+
+fieldset {
+    width: 30%;
+    height: auto;
+    
+    margin-bottom: 1em;
+}
+
+fieldset label{
+    float: none;
+}
+
+textarea {
+    clear: both;
+    display:block;
+    
+    width: 50%;
+    height: 15em;
+    
+    margin-bottom: 1em;
+    
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 /* Generic Tags */
 /* Table Controls */
 table {
@@ -154,6 +201,7 @@ th:nth-child(2), td:nth-child(2) {
 tbody tr:nth-child(even) {
     background-color: #151515;
 }
+
 
 /* Media Queries */
 @media only screen and (max-width: 970px) {
