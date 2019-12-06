@@ -79,6 +79,9 @@ Tested/Update: N/A
     /* Seperates the SlickNav menu from the content of the page. */
     margin-top: 2%;
     
+    /* Prevents the footer from colliding with the contentBacking. */  
+    margin-bottom: 8%;
+    
     margin-left: 15%;
     margin-right: 15%;
     
@@ -87,6 +90,29 @@ Tested/Update: N/A
 
 .contentWrap {
     margin-left: .5%
+}
+
+/* controls the footer at the bottom of the pages. */
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    
+    width: 100%;
+    
+    background-color: #353535;
+    
+    border-top: 5px solid #A5A5A5; 
+    
+    text-align: center;
+}
+
+.footer a:link {
+    color: #FFFFFF;
+}
+
+.footer a:visited {
+    color: #FFFFFF;
 }
 
 /* General Page CSS */
@@ -189,6 +215,7 @@ fieldset {
     width: 30%;
     height: auto;
     
+    margin-top: 1em;
     margin-bottom: 1em;
 }
 
@@ -263,6 +290,11 @@ tbody tr:nth-child(even) {
     .column {
         flex: 50%;
         max-width: 45.8%;
+    }
+    
+    /* Contact Page */
+    textarea {
+        width: 98%;
     }
     
 }
