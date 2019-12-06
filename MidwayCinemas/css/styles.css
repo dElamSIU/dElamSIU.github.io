@@ -282,6 +282,9 @@ tbody tr:nth-child(even) {
     .contentBacking {
         margin-left: 0%;
         margin-right: 0%;
+        
+        /* Prevents the footer from colliding with the contentBacking. */  
+        margin-bottom: 15%;
     }
     
     /* Movie Page */
