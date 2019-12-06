@@ -126,6 +126,41 @@ body {
     width: 100%;
 }
 
+/* Movie Description Pages */
+.movieCover {
+    max-width: 50%;
+    max-height: auto;
+    
+    margin-left: 25%;
+}
+
+/* Movie Trailer */
+/* Could not make the embed responsive initially. I had to search up the problem and was lead here: 
+https://support.google.com/sites/forum/AAAATAKBXDQUVHOGRHJWls//?hl=en&gpf=d/topic/sites/UVHOGRHJWls/ */
+.embedContainer {
+    position: relative;
+    
+    width: 100%;
+    height: auto;
+    
+    margin-left: 2%;
+    
+    /* For aspect ratio 16x9 */
+    padding-bottom: 56.25%;
+    
+    overflow: hidden;
+}
+
+.embedContainer iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    width: 95%;
+    height: 95%;
+}
+
+/* Contact Page */
 /* Form Controls */
 #button {
     margin-left: 0em;
@@ -214,6 +249,12 @@ tbody tr:nth-child(even) {
     /* Hide desktop menu */
     #nav_menu {
         display: none;
+    }
+    
+    /* Expands the backing that the words and pictures sit on to fit smaller screens better. */
+    .contentBacking {
+        margin-left: 0%;
+        margin-right: 0%;
     }
     
     /* Movie Page */
