@@ -284,7 +284,7 @@ tbody tr:nth-child(even) {
         margin-right: 0%;
         
         /* Prevents the footer from colliding with the contentBacking. */  
-        margin-bottom: 15%;
+        margin-bottom: 100px;
     }
     
     /* Movie Page */
