@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <!--
+        Title:Midway Cinemas
+                Basic Web Applications
+        Name: Dakota Elam
+        School: Southern Illinois University
+        Date Developed: 11/8/2019
+        Tested/Update: N/A
+    -->
+    <head>
+        <title>Midway Cinemas</title>
+        
+        <!-- Favicon -->
+        <link rel="shortcut icon" href="./favicon.ico">
+        
+        <meta charset="utf-8">
+        <meta name="description" content="Our movie theatres are among the most unique and carries the latest technology to ensure an amazing viewing experience.">
+        <meta name="keywords" content="Midway, Cinema, Movie, Theatre, Theater">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
+        <!-- External Stylesheets -->
+        <link rel="stylesheet" href="./css/styles.css">
+        <link rel="stylesheet" href="./css/slicknav.css">
+        
+        <!-- Slicknav Plugin Scripts -->
+        <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
+        <script src="./js/jquery.slicknav.min.js"></script>
+        <script type="text/javascript">
+            $(document) .ready(function(){
+                $('#nav_menu') .slicknav({prependTo:"#mobile_menu"});
+            });
+        </script>
+    </head>
+<body>
+    <!-- Logo -->
+    <img src="./images/logo.png" alt="Midway Cinemas Logo" class="logo">
+    
+    <div class="contentBackingHeader">
+        <div class="contentWrapHeader">
+            <h1 class="businessName">Midway Cinemas</h1>  
+            <!-- SlickNav    -->
+            <nav id="mobile_menu"></nav>
+            <nav id="nav_menu">
+                <ul>
+                    <li><a href="index.htm">Home</a></li>
+                    <li><a href="movies.htm">Movies</a></li>
+                    <li><a href="pricing.htm" >Pricing</a></li>
+                    <li><a href="contact.htm">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </div>
+    
+    <div class="contentBacking">
+        <!-- Content Wrapper will around the content such as words and pictures
+             on the webpage to allow for more control via CSS. -->
+        <div class="contentWrap">
+
+            <!-- Description -->
+            <p>Your feedback is important to us. We received your contact form and will respond back as soon as possible. Please allow up to 48 hours for a response.</p>
+
+        </div>
+    </div>
+    
+    <!-- Footer      -->
+    <div class="footer">
+        <p>&copy; Dakota Elam <a href="https://www.siu.edu" target="_blank">Southern Illinois University</a></p>
+    </div>
+</body>
+</html>

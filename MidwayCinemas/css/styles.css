@@ -155,7 +155,7 @@ body {
 /* Movie Description Pages */
 .movieCover {
     max-width: 50%;
-    max-height: auto;
+    height: auto;
     
     margin-left: 25%;
 }
